@@ -10,10 +10,10 @@ This is my own repository to upload some practices done while learning new stuff
   * **learn-your-code:** Practices for the basics of node: asynchronous i/o, http
 * **phaser:** [Phaser] is a fast, free and fun open source game framework for making desktop and mobile browser HTML5 games
   * **flappy-bird-phaser:**  practice taken from [How to make a Flappy Bird in HTML5 - Part 1]
- * **react:** practice related to [React], a javascript library for building user interfaces
+* **react:** practice related to [React], a javascript library for building user interfaces
   * **hello-react:** starter tutorial from [react-tutorial]
   * **hello-world:** very basic tutorial taken from [getting-started]
- * **socket-io:** practices related to [socket.io]
+* **socket-io:** practices related to [socket.io]
   * **chat-example:** [chat-example] to learn socket.io, starter tutorial
 
 [The Node Beginner Book]:http://leanpub.com/nodebeginner
