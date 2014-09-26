@@ -29,7 +29,10 @@ gulp.task('browserify', function() {
 });
 
 gulp.task('clean', function(cb) {
-    del(['public/build/components/*', 'public/build/scripts/*'], cb)
+    del(['public/build/components/*',
+    	 'public/build/scripts/*',
+    	 'public/build/*.html'
+    	], cb)
 });
 
 gulp.task('watch', function() {
