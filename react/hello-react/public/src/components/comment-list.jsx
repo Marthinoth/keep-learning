@@ -5,10 +5,14 @@ var Comment = require('./comment.jsx');
 
 var CommentList = React.createClass({
 	render: function() {
+		var commentNodes = this.props.data.map (function (comment) {
+			return (
+				<Comment author={comment.author}>{comment.text}</Comment>
+			);
+		});
 		return (
 			<div className="commentList">
-				<Comment author="Pete Hunt">This is one comment</Comment>
-				<Comment author="Jordan Walke">This is another comment</Comment>
+				{commentNodes}
 			</div>
 		);
 	}
