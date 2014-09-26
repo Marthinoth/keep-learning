@@ -1,9 +1,9 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var browserify = require('gulp-browserify');
-var react = require('gulp-react');
 var notify = require('gulp-notify');
 var del = require('del');
+var server = require('gulp-express');
 
 gulp.task('copy-js', function() {
 	gulp.src('./public/src/scripts/**/*')
@@ -12,11 +12,11 @@ gulp.task('copy-js', function() {
 
 });
 
-gulp.task('compile-react', function() {
-	gulp.src('./public/src/components/**/*.jsx')
-		.pipe(react())
-		.pipe(gulp.dest('./public/build/components'))
-		.pipe(notify({message: 'compile-react task complete'}));
+gulp.task('copy-html', function() {
+	gulp.src('./public/src/*.html')
+		.pipe(gulp.dest('./public/build/'))
+		.pipe(notify({message: 'copy-html task complete'}));
+
 });
 
 gulp.task('browserify', function() {
@@ -32,13 +32,23 @@ gulp.task('clean', function(cb) {
     del(['public/build/components/*', 'public/build/scripts/*'], cb)
 });
 
-gulp.task('watch', ['build'], function() {
-  gulp.watch('./public/src/components/**/*.jsx', ['compile-react', 'browserify']);
+gulp.task('watch', function() {
+  gulp.watch('./public/src/*.html', ['copy-html']);
   gulp.watch('./public/src/scripts/**/*', ['copy-js']);
+  gulp.watch('./public/src/components/**/*.jsx', ['browserify']);
 });
 
-gulp.task('build', ['clean', 'compile-react', 'copy-js', 'browserify']);
+gulp.task('server', function () {
+    //start the server at the beginning of the task
+    server.run({
+        file: 'server.js'
+    });
+    notify({message: 'server task complete'});
+});
 
-gulp.task('default', ['watch']);
+
+gulp.task('build', ['clean', 'copy-html', 'copy-js', 'browserify']);
+
+gulp.task('default', ['build', 'watch', 'server']);
 
 
