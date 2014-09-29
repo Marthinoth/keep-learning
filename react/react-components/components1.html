@@ -17,15 +17,25 @@
         ];
 
         var PersonApp = React.createClass({
-            var people = this.props.data.map(function (person)
-                return (
-                    <Person first={person.first} last={person.last} />
-                )
-            );
             render: function() {
                 return (
                     <div>
                         <h1>This is the PersonApp</h1>
+                        <PersonList data={this.props.data} />
+                    </div>
+                );
+            }
+        });
+
+        var PersonList = React.createClass({
+            render: function() {
+                var people = this.props.data.map(function (person) {
+                    return (
+                        <Person first={person.first} last={person.last} />
+                    );
+                });
+                return (
+                    <div>
                         {people}
                     </div>
                 );
