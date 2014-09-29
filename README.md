@@ -14,6 +14,7 @@ This is my own repository to upload some practices done while learning new stuff
 * **react:** practice related to [React], a javascript library for building user interfaces
   * **hello-react:** starter tutorial from [react-tutorial]
   * **hello-world:** very basic tutorial taken from [getting-started]
+  * **react-components:** React.js Components videotutorials by Joe Maddalone [Part 1][Part 2]
 * **socket-io:** practices related to [socket.io]
   * **chat-example:** [chat-example] to learn socket.io, starter tutorial
 
@@ -27,3 +28,7 @@ This is my own repository to upload some practices done while learning new stuff
 [react-tutorial]:http://facebook.github.io/react/docs/tutorial.html
 [socket.io]:http://socket.io/
 [chat-example]:http://socket.io/get-started/chat/
+[Part 1]:https://www.youtube.com/watch?v=rFvZydtmsxM
+[Part 2]:https://www.youtube.com/watch?v=5yvFLrt7N8M
+
+ 

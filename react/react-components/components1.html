@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>React Components Part 1</title>
+    <script src="http://fb.me/react-0.8.0.js"></script>
+    <script src="http://fb.me/JSXTransformer-0.8.0.js"></script>
+</head>
+<body>
+    <div id="content"></div>
+    <script type="text/jsx">
+        /** @jsx React.DOM */
+
+        var data = [
+            {first: "Bruce", last: "Wayne"},
+            {first: "Peter", last: "Parker"}
+        ];
+
+        var PersonApp = React.createClass({
+            var people = this.props.data.map(function (person)
+                return (
+                    <Person first={person.first} last={person.last} />
+                )
+            );
+            render: function() {
+                return (
+                    <div>
+                        <h1>This is the PersonApp</h1>
+                        {people}
+                    </div>
+                );
+            }
+        });
+
+        var Person = React.createClass({
+            render: function() {
+                return (
+                    <div>
+                        <h2> {this.props.last}, {this.props.first} </h2>
+                    </div>
+                );
+            }
+        });
+
+        React.renderComponent(<PersonApp data={data}/>, document.getElementById('content'));
+    </script>
+</body>
+</html>
