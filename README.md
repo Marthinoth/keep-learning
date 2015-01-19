@@ -15,6 +15,8 @@ This is my own repository to upload some practices done while learning new stuff
   * **hello-react:** starter tutorial from [react-tutorial]
   * **hello-world:** very basic tutorial taken from [getting-started]
   * **react-components:** React.js Components videotutorials by Joe Maddalone [Part 1] - [Part 2]
+  * **flux-todomvc: flux overview from facebook tutorial [flux-tutorial]
+  * **flux-chat: flux overview from facebook tutorial [flux-chat]
 * **socket-io:** practices related to [socket.io]
   * **chat-example:** [chat-example] to learn socket.io, starter tutorial
 
@@ -30,5 +32,7 @@ This is my own repository to upload some practices done while learning new stuff
 [chat-example]:http://socket.io/get-started/chat/
 [Part 1]:https://www.youtube.com/watch?v=rFvZydtmsxM
 [Part 2]:https://www.youtube.com/watch?v=5yvFLrt7N8M
+[flux-tutorial]:http://facebook.github.io/flux/docs/todo-list.html
+[flux-chat]:http://facebook.github.io/flux/docs/chat.html
 
  
