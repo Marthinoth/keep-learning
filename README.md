@@ -5,6 +5,8 @@ This is my own repository to upload some practices done while learning new stuff
 
 
 #### Folders:
+* **backbone:** Practices related to backbone.js
+  * **curso-backbone-c2:** chapter 2 of backbone.jscourse from baDevCode.la [video-backbone-c2]
 * **node-beginner-book:** Node.js related code from [The Node Beginner Book]
 * **node-school-io:** Practices from [NodeSchool] - Learn node.js with interactive lessons
   * **learn-your-code:** Practices for the basics of node: asynchronous i/o, http
@@ -34,5 +36,5 @@ This is my own repository to upload some practices done while learning new stuff
 [Part 2]:https://www.youtube.com/watch?v=5yvFLrt7N8M
 [flux-tutorial]:http://facebook.github.io/flux/docs/todo-list.html
 [flux-chat]:http://facebook.github.io/flux/docs/chat.html
-
+[video-backbone-c2]:https://www.youtube.com/watch?v=xMCp5qU6dh8
  
