@@ -12,11 +12,20 @@
 		}
 	</style>
 </head>
-<body>
+<body id="app">
 
-    <div class="vista">
-        
+    <!-- <div class="vista"></div> -->
+
+    <div class="libros">
+        <h1>Libros</h1>
     </div>
+
+    <script type="text/template" id="tplMostrarLibro">
+        <h2><%= titulo %></h2>
+        <p><%= autor %></p>
+        <small><%= categoria %></small>
+        <hr>
+    </script>
 
 	<script src="js/vendor/jquery-1.11.2.min.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
@@ -24,6 +33,8 @@
 	<script src="js/vendor/backbone-min.js"></script>
 
 	<script src="js/backbone/models/libro.js"></script>
+    <script src="js/backbone/collections/libros.js"></script>
 	<script src="js/backbone/views/libreria.js"></script>
+
 </body>
 </html>
